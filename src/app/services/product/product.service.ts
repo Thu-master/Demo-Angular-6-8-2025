@@ -86,9 +86,9 @@ addProductToCart( id: string){
     if (product) {
       let productInCart =this.cartList.find(itemCart => product.id === itemCart.id);
       if(productInCart){
-        product.quantity =+1;
+        product.quantity += 1;
       }else{
-        product.quantity =+1;
+        product.quantity += 1;
         this.cartList.push(product);
       }
     }
